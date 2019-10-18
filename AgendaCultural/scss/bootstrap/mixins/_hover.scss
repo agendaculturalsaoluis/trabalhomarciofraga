@@ -1,0 +1,32 @@
+//Copyright (C) 2019 by Marcelo Monteiro <marcelodjmix2013@gmail.com> 
+//All Rights Reserved
+//
+//This product is protected by copyright and distributed under
+//licenses restricting copying, distribution, and decompilation.
+
+@mixin hover {
+  &:hover { @content; }
+}
+
+@mixin hover-focus {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin plain-hover-focus {
+  &,
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin hover-focus-active {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
